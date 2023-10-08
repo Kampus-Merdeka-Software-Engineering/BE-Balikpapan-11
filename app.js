@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 
-const { contactusRoutes } = require('./routes/contactusRoutes');
+const  contactusRoutes  = require('./routes/contactusRoutes');
 
 
 app.use(cors()); // untuk mengaktifkan cors, agar API bisa diakses dari luar atau dari frontend

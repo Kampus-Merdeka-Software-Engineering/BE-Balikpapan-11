@@ -23,5 +23,7 @@ model courses {
   id        Int     @id @default(autoincrement())
   name      String
   video     String
+  gambar    String
+  kategori  Int
 
 }

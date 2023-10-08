@@ -23,4 +23,4 @@ contactusRoutes.post('/', async (req, res) =>  {
     })
 });
 
-module.exports = { contactusRoutes }
+module.exports =  contactusRoutes 
