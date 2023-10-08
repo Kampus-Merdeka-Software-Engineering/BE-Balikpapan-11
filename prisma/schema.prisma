@@ -18,3 +18,10 @@ model contactus {
   message   String
   createdAT DateTime @default(now())
 }
+
+model courses {
+  id        Int     @id @default(autoincrement())
+  name      String
+  video     String
+
+}
