@@ -1,9 +1,11 @@
 const express = require('express');
 const coursesRoutes = express.Router();
 const { prisma } = require('../config/prisma');
-const { getcoursesControllers } = require('../controllers/coursesControllers');
+const { getcoursesControllers, getcoursesbykategori } = require('../controllers/coursesControllers');
 
 coursesRoutes.get('/', getcoursesControllers );
+coursesRoutes.get('/:id', getcoursesbykategori );
+
 
 
 coursesRoutes.post('/', async (req, res) =>  {
