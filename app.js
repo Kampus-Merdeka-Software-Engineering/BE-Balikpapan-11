@@ -5,7 +5,7 @@ const app = express();
 
 
 const  contactusRoutes  = require('./routes/contactusRoutes');
-
+const  coursesRoutes  = require('./routes/coursesRoutes');
 
 app.use(cors()); // untuk mengaktifkan cors, agar API bisa diakses dari luar atau dari frontend
 app.use(express.json()) // parse request body dari JSON ke Object
@@ -16,6 +16,7 @@ app.get('/', (req, res) => {
     res.send('Hello Word');
 });
 
+app.use("/courses", coursesRoutes);
 app.use("/contactus", contactusRoutes);
 //routes contactus
 
