@@ -20,10 +20,8 @@ app.use("/courses", coursesRoutes);
 app.use("/contactus", contactusRoutes);
 //routes contactus
 
+const PORT = process.env.PORT || 5500;
 
-
-
-
-app.listen(3000, () => {
-    console.log('Berjalan Di Port 3000!');
+app.listen(PORT, () => {
+    console.log('Berjalan Di Port '+ PORT);
 });
