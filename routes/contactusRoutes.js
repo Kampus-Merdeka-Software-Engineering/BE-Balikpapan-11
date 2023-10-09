@@ -11,10 +11,10 @@ contactusRoutes.post('/', async (req, res) =>  {
     console.log(req.body);
     const createdcontactus = await prisma.contactus.create({
         data: {
-            name: "",
-            email: "",
-            number: "",
-            message: ""
+            name,
+            email,
+            number,
+            message
         }
     })
     res.status(201).json({
